@@ -1,0 +1,28 @@
+
+//see Lab Talk Language/Command Reference for commands discription;
+
+
+//The edit command opens the worksheet for the active dataset
+//edit mean;
+
+
+//Me: Sheet should be active: should put on it
+
+x2 = -999;
+y2 = -999;
+nx1 = 0;
+nx2 = 0;
+
+    loop (i, 1, 500) 
+      {
+         nx1 = (i-1)*2 + 1;
+         nx2 = (i-1)*2 + 2;
+         cell(i,5) = (cell(nx1,3) + cell(nx2,3))/2;
+         cell(i,6) = cell(nx1,4) + cell(nx2,4);                   
+
+      }
+
+//The edit command opens the worksheet for the active dataset
+
+//Delete all datasets that are not in any worksheet and not used in any graphs
+  delete -as;
