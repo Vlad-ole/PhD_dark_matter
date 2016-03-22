@@ -1,0 +1,85 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      2275,         76]
+NotebookOptionsPosition[      1864,         58]
+NotebookOutlinePosition[      2306,         75]
+CellTagsIndexPosition[      2263,         72]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"Solve", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"713", "/", " ", 
+     RowBox[{"(", 
+      RowBox[{"x", " ", "/", " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"23.6", "*", "1", "E"}], "-", "3"}], ")"}]}], ")"}]}], " ", 
+    "\[Equal]", " ", 
+    RowBox[{"0.49445", " ", "/", " ", 
+     RowBox[{"(", 
+      RowBox[{"1", " ", "+", " ", 
+       RowBox[{"44.58929", " ", "/", "x"}]}], ")"}]}]}], ",", "x"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.6675540767459865`*^9, 3.667554159998742*^9}, {
+  3.6675542133028417`*^9, 3.667554251106312*^9}, {3.6675543022188253`*^9, 
+  3.6675543141114473`*^9}, {3.667554375447962*^9, 3.667554380857572*^9}, {
+  3.6675544343028736`*^9, 3.667554472200944*^9}, {3.667554624813284*^9, 
+  3.667554646414528*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"x", "\[Rule]", 
+     RowBox[{"-", "44.56676585460412`"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", "\[Rule]", "88225.34272118814`"}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.6675540899908104`*^9, {3.6675541411143074`*^9, 3.667554161905946*^9}, 
+   3.6675542540149174`*^9, 3.6675543218308616`*^9, 3.6675543834335766`*^9, {
+   3.6675544623665257`*^9, 3.6675544743859477`*^9}, 3.66755465257994*^9}]
+}, Open  ]]
+},
+WindowSize->{1223, 522},
+WindowMargins->{{98, Automatic}, {Automatic, 109}},
+Magnification:>FEPrivate`If[
+  FEPrivate`Equal[FEPrivate`$VersionNumber, 6.], 2., 2. Inherited],
+FrontEndVersion->"8.0 for Microsoft Windows (64-bit) (October 6, 2011)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 782, 20, 57, "Input"],
+Cell[1364, 44, 484, 11, 57, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

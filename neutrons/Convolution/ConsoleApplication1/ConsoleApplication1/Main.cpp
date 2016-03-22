@@ -97,17 +97,35 @@ int main()
 	ROOT::Math::Interpolator inter(ni, ROOT::Math::Interpolation::kLINEAR);
 	inter.SetData(xv, yv);
 
-	for (double i = -10; i < 25; i += 0.1)
+	//fit parameters ER(E0) 
+	double a = 4.02938 * (0.42959 / 0.22);
+	double b = -0.7158;
+
+	double L_ion = 0.3; //quench factor
+
+
+	for (double i = -50; i < 500; i += 1)
 	{
-
+		cout << "i = " << i << endl;
+		
 		double value = 0;
-
-
 
 		for (double j = 0; j <= *max_element(xv.begin(), xv.end()); j += step)
 		{
 			double dx = i - j;
-			value += inter.Eval(j) * gauss(dx, 0, j*0.3) * step;
+			double sigma;
+			if (j != 0)
+			{
+				sigma = j * (a*pow(j*L_ion, b));
+			}
+			else
+			{
+				sigma = 0;
+			}
+			
+			//cout << "sigma = " << sigma << endl;
+		
+			value += inter.Eval(j) * gauss(dx, 0, sigma) * step;
 
 			//cout << j << "\t" << inter.Eval(j) << endl;
 		}
