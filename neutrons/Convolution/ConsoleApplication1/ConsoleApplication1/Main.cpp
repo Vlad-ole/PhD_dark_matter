@@ -101,7 +101,7 @@ int main()
 	double a = 4.02938 * (0.42959 / 0.22);
 	double b = -0.7158;
 
-	double L_ion = 0.3; //quench factor
+	double L_ion = 0.4; //quench factor
 
 
 	for (double i = -50; i < 500; i += 1)
@@ -116,8 +116,8 @@ int main()
 			double sigma;
 			if (j != 0)
 			{
-				//sigma = j * (a*pow(j*L_ion, b));
-				sigma = j * 0.2903;
+				sigma = j * (a*pow(j*L_ion, b));
+				//sigma = j * 0.2903;
 			}
 			else
 			{
