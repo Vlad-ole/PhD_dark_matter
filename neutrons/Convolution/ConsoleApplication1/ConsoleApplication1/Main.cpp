@@ -116,8 +116,9 @@ int main()
 			double sigma;
 			if (j != 0)
 			{
-				sigma = j * (a*pow(j*L_ion, b));
-				//sigma = j * 0.2903;
+				//choose model of energy rewsolution
+				//sigma = j * (a*pow(j*L_ion, b));
+				sigma = j * 0.1;
 			}
 			else
 			{
